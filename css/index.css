@@ -1,0 +1,120 @@
+/* HERO */
+
+.hero{
+    height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(120deg,#ffffff,#ffe1d8);
+}
+
+.hero h1{
+    font-size:80px;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+
+/* BANNER */
+
+.banner{
+    background:black;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    padding:80px 0;
+}
+
+
+/* PROJECTS */
+
+.projects{
+    background:#f2f2f2;
+    padding:80px 0;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.project-card img{
+    width:100%;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.projects-button{
+    text-align:center;
+    margin-top:40px;
+}
+
+
+/* PROFILE */
+
+.profile{
+    padding:80px 0;
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.profile-photo{
+    width:100%;
+    height:250px;
+    background:#ddd;
+    margin-top:20px;
+}
+
+.card{
+    background:#eee;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+
+/* TOOLS */
+
+.tools{
+    text-align:center;
+    padding:80px 0;
+}
+
+.tools-icons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.tool{
+    width:80px;
+    height:80px;
+    background:#ddd;
+    border-radius:50%;
+}
