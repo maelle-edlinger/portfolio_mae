@@ -73,9 +73,10 @@
 .about{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:40px;
-    padding:80px 0;
-    text-align: center;
+    gap:90px;
+    padding:100px 30px;
+    text-align: left;
+    width: 70%;
 }
 
 
@@ -84,13 +85,30 @@
 
 .projects{
     background:#f2f2f2;
-    padding:80px 0;
+    padding: 70px 0;
+}
+
+.project_title {
+    text-align: center;
+}
+
+.separator{
+  height: 8px;
+  width: 8%;
+  margin: 20px auto;
+  background: linear-gradient(to right, #FF7957, #F3471E);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .projects-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
+    margin: 70px auto;
 }
 
 .project-card{
@@ -117,26 +135,55 @@
 
 .profile{
     padding:80px 0;
+    width: 70%;
 }
 
 .profile-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:40px;
+    gap:110px;
+    margin: 60px auto;
 }
 
-.profile-photo{
-    width:100%;
-    height:250px;
-    background:#ddd;
-    margin-top:20px;
+.profile_annee{
+    font-size: 12px;
+    font-family: "creatodisplay";
+    font-weight: normal;
+}
+
+.profile_milieu{
+    font-size: 20px;
+    font-family: "creatodisplay";
+    font-weight: 600;
+    margin: 8px 0px;
+}
+
+.profile_lieu{
+    font-size: 16px;
+    font-family: "creatodisplay";
+    font-weight: 100;
+
+}
+
+.profile-about h3{
+  margin-bottom: 20px;
+}
+
+.profile-about {
+    margin: 30px 0px;
+}
+
+.cv {
+    margin: 20px 0px;
 }
 
 .card{
     background:#eee;
-    padding:20px;
+    padding:25px;
     border-radius:10px;
     margin-bottom:10px;
+    border: solid 0.5px #acacac;
+
 }
 
 
@@ -144,7 +191,7 @@
 
 .tools{
     text-align:center;
-    padding:80px 0;
+    padding-bottom: 80px;
 }
 
 .tools-icons{
