@@ -1,32 +1,72 @@
 /* HERO */
 
 .hero{
-    height:500px;
+    height:700px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    background:linear-gradient(120deg,#ffffff,#ffe1d8);
+    background:linear-gradient(120deg,#dfdfdf,#ffffff,#ffbeaa);
 }
 
 .hero h1{
-    font-size:80px;
+    font-size:100px;
 }
 
 .hero p{
     margin:20px 0;
 }
 
+.hero_logo {
+    width: 20%;
+}
 
 /* BANNER */
 
-.banner{
-    background:black;
-    color:white;
-    padding:10px;
-    text-align:center;
+.banner {
+    width: 100%;
+    overflow: hidden; /* cache le texte qui sort */
+    background: #171717; /* couleur de fond */
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+    white-space: nowrap;
+    position: relative;
 }
 
+.banner-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+}
+
+.banner-track span {
+    margin-right: 0px; /* espace entre répétitions */
+}
+
+.banner-track p{
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-30%);
+        -webkit-transform: translateX(-30%);
+        -moz-transform: translateX(-30%);
+        -ms-transform: translateX(-30%);
+        -o-transform: translateX(-30%);
+}
+}
+
+.banner-track:hover {
+    animation-play-state: paused;
+}
 
 /* ABOUT */
 
@@ -35,7 +75,9 @@
     grid-template-columns:1fr 1fr;
     gap:40px;
     padding:80px 0;
+    text-align: center;
 }
+
 
 
 /* PROJECTS */
