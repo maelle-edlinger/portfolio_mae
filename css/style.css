@@ -134,11 +134,16 @@ body{
 /* HEADER */
 
 .header{
-    background:white;
+    background:rgb(221, 8, 8);
     padding:15px 0;
+    margin:20px auto;
+    width:90%;
+    max-width:1200px;
+    border-radius:20px;
 }
 
 .header-container{
+    width: 80%;
     display:flex;
     align-items:center;
     justify-content:space-around;
