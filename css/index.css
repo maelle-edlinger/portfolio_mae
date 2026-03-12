@@ -21,6 +21,17 @@
     width: 20%;
 }
 
+/* ABOUT responsive - mobile inversé */
+@media (max-width: 768px) {
+  .hero_logo {
+    width: 200px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+}
+
 /* BANNER */
 
 .banner {

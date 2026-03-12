@@ -185,7 +185,7 @@ a {
 @media (max-width: 768px) {
 
   .header {
-    position: relative; /* header pousse le contenu */
+    position: relative;
     width: 100%;
     background: white;
     padding: 15px 0;
@@ -194,34 +194,39 @@ a {
 
   .header-container {
     display: flex;
-    flex-direction: column; /* tout en colonne */
+    flex-direction: column;
     align-items: center;
-    gap: 20px; /* espace entre logo et menu */
+    gap: 20px;
   }
 
   /* Retire le positionnement absolu du logo */
   .header-container > div:nth-child(2) {
     position: static !important;
     transform: none !important;
+    order: 1; /* logo en haut */
   }
 
-  /* Logo centré */
+  .nav-left {
+    order: 2; /* pages en dessous du logo */
+  }
+
+  /* Cache le bouton contact sur mobile */
+  .nav-right {
+    display: none;
+  }
+
+  /* Logo */
   .logo {
-    width: 50px;
-    cursor: pointer;
+    width: 40px;
   }
 
   /* Menu vertical */
-  .nav-left, .nav-right {
+  .nav-left {
     display: flex;
-    flex-direction: column; /* liens empilés */
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     width: 100%;
-  }
-
-  .nav-right {
-    margin-top: 10px; /* espace avant bouton Contact */
   }
 
 }

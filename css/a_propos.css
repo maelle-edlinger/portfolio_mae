@@ -12,6 +12,18 @@
     text-align: center;
 }
 
+/* STATS responsive - mobile */
+@media (max-width: 768px) {
+  .container-title {
+    width: 90%;
+  }
+
+  .about-page {
+    padding: 40px 0px 20px 0px;
+  }
+
+}
+
 /* STATS */
 
 .stats {
@@ -31,6 +43,22 @@
 
 .stat h2 {
   font-size: 40px;
+}
+
+/* STATS responsive - mobile */
+@media (max-width: 768px) {
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px;                  /* réduire l’espace entre les stats */
+    width: 60%;                 /* prend presque toute la largeur */
+    margin: 60px auto;          /* centrer verticalement et horizontalement */
+  }
+
+  .stat {
+    padding: 20px;              /* padding réduit pour mobile */
+  }
+
 }
 
 /* PROFILE */
@@ -88,6 +116,44 @@
     background: #d7d7d7;
 }
 
+/* PROFILE responsive - mobile */
+@media (max-width: 768px) {
+  .profile {
+    width: 90%; /* prend presque toute la largeur de l’écran */
+    margin: 0 auto;
+    padding: 40px 0; /* padding vertical pour espacer la section */
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 30px; /* espace entre les colonnes qui sont maintenant empilées */
+    margin: 0 auto;
+  }
+
+  /* Garder le texte aligné à gauche */
+  .profile-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espace entre les cards et blocs */
+  }
+
+
+
+  .profile_text {
+    margin-top: 10px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .cv {
+    margin: 15px 0;
+  }
+}
+
 /* TOOLS */
 
 .tools{
@@ -108,4 +174,25 @@
     height:80px;
     background:#ddd;
     border-radius:50%;
+}
+
+/* TOOLS responsive - mobile */
+@media (max-width: 768px) {
+  .tools {
+    text-align: center;
+    padding-bottom: 50px; /* padding réduit sur mobile */
+  }
+
+  .tools-icons {
+    display: flex;
+    flex-wrap: wrap; /* permet aux icônes de passer à la ligne */
+    justify-content: center;
+    gap: 15px; /* espace réduit entre les icônes */
+    margin-top: 20px;
+  }
+
+  .tool {
+    width: 60px; /* icône plus petite sur mobile */
+    height: 60px;
+  }
 }

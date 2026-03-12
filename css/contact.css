@@ -26,7 +26,6 @@
   width: 40%;
   margin: auto;
 
-
 }
 
 /* TITRE */
@@ -85,4 +84,13 @@
 
 .arrow {
   font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+  .form-container {
+  width: 60%;
+  margin: auto;
+
+}
 }

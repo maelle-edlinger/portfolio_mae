@@ -59,6 +59,36 @@
   color: #555;
 }
 
+/* INTRO responsive - mobile */
+@media (max-width: 768px) {
+  .projet-intro {
+    width: 90%;           /* prend presque toute la largeur de l’écran */
+    margin: 60px auto 0;  /* centrer horizontalement avec margin-top */
+  }
+
+  .projet-intro h1 {      /* texte plus petit sur mobile */
+    margin-bottom: 20px;
+    text-align: left;     /* aligné à gauche */
+  }
+
+  .projet-intro h2 {
+     /* texte plus petit sur mobile */
+    margin-bottom: 20px;
+    text-align: left;     /* aligné à gauche */
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* tout en colonne */
+    gap: 20px;                  /* espace entre les éléments */
+  }
+
+  .intro-grid h4 {
+    text-align: left;           /* texte aligné à gauche */
+    color: #555;
+  }
+}
+
 /* STATS */
 
 .stats {
@@ -78,6 +108,22 @@
 
 .stat h2 {
   font-size: 40px;
+}
+
+/* STATS responsive - mobile */
+@media (max-width: 768px) {
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px;                  /* réduire l’espace entre les stats */
+    width: 60%;                 /* prend presque toute la largeur */
+    margin: 60px auto;          /* centrer verticalement et horizontalement */
+  }
+
+  .stat {
+    padding: 20px;              /* padding réduit pour mobile */
+  }
+
 }
 
 /* IMAGE LARGE */
@@ -163,4 +209,19 @@
   border-radius: 8px;
   text-decoration: none;
   color: black;
+}
+
+/* PROJECTS responsive - cartes empilées sur mobile */
+@media (max-width: 768px) {
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px; /* espace entre les cartes réduit pour mobile */
+    margin: 50px auto; /* ajuste la marge si nécessaire */
+    width: 90%; /* prend presque toute la largeur de l’écran */
+  }
+
+  .portfolio-card {
+    width: 100%; /* chaque carte prend toute la largeur de la grille */
+  }
 }

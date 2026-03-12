@@ -5,6 +5,14 @@
   background: #f5f5f5;
 }
 
+/* STATS responsive - mobile */
+@media (max-width: 768px) {
+  .projects-page {
+        padding: 40px 0px 80px 0px;
+  }
+
+}
+
 /* TITLE */
 
 .title {
@@ -56,3 +64,17 @@
   gap: 40px;
 }
 
+/* PROJECTS GRID responsive - mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px; /* espace réduit entre les cartes */
+    margin: 0 auto; /* centrer la grille */
+    width: 90%; /* prend presque toute la largeur */
+  }
+
+  .project-card {
+    width: 100%; /* chaque carte prend toute la largeur */
+  }
+}
