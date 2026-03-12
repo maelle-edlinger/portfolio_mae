@@ -212,3 +212,17 @@ a {
   font-weight: 100;
   font-size: 10px;
 }
+
+
+/*SEPARATEUR*/
+.separator{
+  height: 8px;
+  width: 8%;
+  margin: 20px auto;
+  background: linear-gradient(to right, #FF7957, #F3471E);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

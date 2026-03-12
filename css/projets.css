@@ -1,8 +1,7 @@
 /* PAGE PROJETS */
 
 .projects-page {
-  padding: 120px 0;
-  margin-top: 120px;
+  padding: 220px 0;
   background: #f5f5f5;
 }
 
@@ -11,18 +10,21 @@
 .title {
   text-align: center;
   font-size: 50px;
-  margin-bottom: 10px;
 }
 
-.title-bar {
-  width: 60px;
-  height: 6px;
-  background: #ff6b4a;
-  margin: 15px auto 40px;
-  border-radius: 10px;
+.separator{
+  height: 8px;
+  width: 8%;
+  margin-bottom: 70px;
+  background: linear-gradient(to right, #FF7957, #F3471E);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-/* FILTERS */
+/* FILTERS 
 
 .filters {
   display: flex;
@@ -44,6 +46,8 @@
   color: white;
 }
 
+*/
+
 /* GRID */
 
 .projects-grid {
@@ -52,14 +56,3 @@
   gap: 40px;
 }
 
-/* FOOTER SOCIAL */
-
-.social {
-  display: block;
-  background: #eee;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  text-decoration: none;
-  color: black;
-}
