@@ -79,7 +79,26 @@
     width: 70%;
 }
 
+/* ABOUT responsive - mobile inversé */
+@media (max-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 30px;
+    padding: 50px 20px;
+    width: 90%;
+    text-align: center;
+  }
 
+  /* Inverser l’ordre : about-right au-dessus */
+  .about-left {
+    order: 2; /* passe en dessous */
+  }
+
+  .about-right {
+    order: 1; /* passe en haut */
+  }
+}
 
 /* PROJECTS */
 
@@ -130,6 +149,21 @@
     margin-top:40px;
 }
 
+/* PROJECTS responsive - cartes empilées sur mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px; /* espace entre les cartes réduit pour mobile */
+    margin: 50px auto; /* ajuste la marge si nécessaire */
+    width: 90%; /* prend presque toute la largeur de l’écran */
+  }
+
+  .project-card {
+    width: 100%; /* chaque carte prend toute la largeur de la grille */
+  }
+}
+
 
 /* PROFILE */
 
@@ -149,6 +183,7 @@
     font-size: 12px;
     font-family: "creatodisplay";
     font-weight: normal;
+    color: orangered;
 }
 
 .profile_milieu{
@@ -191,6 +226,32 @@
     background: #d7d7d7;
 }
 
+/* PROFILE responsive - inverser les deux colonnes */
+@media (max-width: 768px) {
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 40px;
+    margin: 40px auto;
+  }
+
+  /* inverser l’ordre des deux colonnes */
+  .profile-grid > .profile-info:first-child {
+    order: 2; /* l’ancienne colonne gauche passe en bas */
+  }
+
+  .profile-grid > .profile-info:last-child {
+    order: 1; /* l’ancienne colonne droite passe en haut */
+  }
+
+  /* Conserver le texte aligné à gauche dans chaque colonne */
+  .profile-info {
+    text-align: left;
+  }
+
+  
+}
+
 
 /* TOOLS */
 
@@ -211,4 +272,25 @@
     height:80px;
     background:#ddd;
     border-radius:50%;
+}
+
+/* TOOLS responsive - mobile */
+@media (max-width: 768px) {
+  .tools {
+    text-align: center;
+    padding-bottom: 50px; /* padding réduit sur mobile */
+  }
+
+  .tools-icons {
+    display: flex;
+    flex-wrap: wrap; /* permet aux icônes de passer à la ligne */
+    justify-content: center;
+    gap: 15px; /* espace réduit entre les icônes */
+    margin-top: 20px;
+  }
+
+  .tool {
+    width: 60px; /* icône plus petite sur mobile */
+    height: 60px;
+  }
 }
