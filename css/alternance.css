@@ -1,0 +1,358 @@
+/* ========================= */
+/* GLOBAL PORTFOLIO CARDS */
+/* ========================= */
+
+.portfolio-card {
+  background: rgb(255, 255, 255);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  transition: 0.3s;
+
+  display: flex;            /* ajoute flex */
+  flex-direction: column;   /* contenu en colonne */
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-card-content {
+  padding: 20px;
+  display: flex;            /* contenu interne en colonne */
+  flex-direction: column;
+  flex: 1;                  /* prend toute la hauteur */
+}
+
+.portfolio-card-tag {
+  font-size: 12px;
+  color: #888;
+}
+
+.portfolio-card-title {
+  margin: 10px 0;
+}
+
+.portfolio-card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.portfolio-card-link {
+  color: #616c28;
+  text-decoration: none;
+  font-weight: 600;
+
+  margin-top: auto; /* pousse le lien en bas */
+}
+
+
+/* BUTTON */
+
+.btn {
+  background: #d2d703;
+  color: #616c28;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0,2;
+  -webkit-transition: 0,2;
+  -moz-transition: 0,2;
+  -ms-transition: 0,2;
+  -o-transition: 0,2;
+}
+
+.btn:hover {
+  background: #cfd6a8;
+}
+
+/* HERO */
+
+.hero{
+    height:700px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:#596421;
+    padding-top: 30px;
+}
+
+.hero h1{
+    font-size:100px;
+}
+
+.hero p{
+    margin:20px 0;
+    color: #ffffff;
+}
+
+.hero_logo {
+    width: 35%;
+}
+
+/* ABOUT responsive - mobile inversé */
+@media (max-width: 768px) {
+  .hero_logo {
+    width: 200px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+}
+
+/* BANNER */
+
+.banner {
+    width: 100%;
+    overflow: hidden; /* cache le texte qui sort */
+    background: #171717; /* couleur de fond */
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.banner-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 5s linear infinite;
+    -webkit-animation: scroll 5s linear infinite;
+}
+
+.banner-track span {
+    margin-right: 0px; /* espace entre répétitions */
+}
+
+.banner-track p{
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+/* Animation */
+@keyframes scroll{
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-30%);
+        -webkit-transform: translateX(-30%);
+        -moz-transform: translateX(-30%);
+        -ms-transform: translateX(-30%);
+        -o-transform: translateX(-30%);
+}
+}
+
+.banner-track:hover {
+    animation-play-state: paused;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:90px;
+    padding:100px 30px;
+    text-align: left;
+    width: 70%;
+}
+
+/* ABOUT responsive - mobile inversé */
+@media (max-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 30px;
+    padding: 50px 20px;
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Inverser l’ordre : about-right au-dessus */
+  .about-left {
+    order: 2; /* passe en dessous */
+  }
+
+  .about-right {
+    order: 1; /* passe en haut */
+  }
+}
+
+/* PROJECTS */
+
+.projects{
+    background:#f2f2f2;
+    padding: 70px 0;
+}
+
+.project_title {
+    text-align: center;
+}
+
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin: 70px auto;
+}
+
+.project-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.project-card img{
+    width:100%;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.projects-button{
+    text-align:center;
+    margin-top:40px;
+}
+
+/* PROJECTS responsive - cartes empilées sur mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px; /* espace entre les cartes réduit pour mobile */
+    margin: 50px auto; /* ajuste la marge si nécessaire */
+    width: 90%; /* prend presque toute la largeur de l’écran */
+  }
+
+  .project-card {
+    width: 100%; /* chaque carte prend toute la largeur de la grille */
+  }
+}
+
+
+/* PROFILE */
+
+.profile{
+    padding:80px 0;
+    width: 70%;
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:110px;
+    margin: 60px auto;
+}
+
+.profile_annee{
+    font-size: 12px;
+    font-family: "creatodisplay";
+    font-weight: normal;
+    color: orangered;
+}
+
+.profile_milieu{
+    font-size: 20px;
+    font-family: "creatodisplay";
+    font-weight: 600;
+    margin: 8px 0px;
+}
+
+.profile_lieu{
+    font-size: 16px;
+    font-family: "creatodisplay";
+    font-weight: 100;
+
+}
+
+.profile-about h3{
+  margin-bottom: 40px;
+}
+
+.profile-about {
+    margin: 30px 0px;
+}
+
+.cv {
+    margin: 20px 0px;
+}
+
+.card{
+    background:#eee;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:10px;
+    border: solid 0.5px #acacac;
+    transition: 0.2s;
+
+}
+
+.card:hover {
+    background: #d7d7d7;
+}
+
+/* PROFILE responsive - inverser les deux colonnes */
+@media (max-width: 768px) {
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 40px;
+    margin: 40px auto;
+  }
+
+  /* inverser l’ordre des deux colonnes */
+  .profile-grid > .profile-info:first-child {
+    order: 2; /* l’ancienne colonne gauche passe en bas */
+  }
+
+  .profile-grid > .profile-info:last-child {
+    order: 1; /* l’ancienne colonne droite passe en haut */
+  }
+
+  /* Conserver le texte aligné à gauche dans chaque colonne */
+  .profile-info {
+    text-align: left;
+  }
+
+  
+}
+
+
+/* animation */
+@keyframes scroll {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+
+
+/*SEPARATEUR*/
+.separator{
+  height: 8px;
+  width: 8%;
+  margin: 20px auto;
+  background:#d2d703;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
