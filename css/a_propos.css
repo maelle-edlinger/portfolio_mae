@@ -99,6 +99,10 @@
     margin-top: 10px;
 }
 
+ul {
+  margin-left: 30px;
+}
+
 .cv {
     margin: 20px 0px;
 }
@@ -158,22 +162,31 @@
 
 .tools{
     text-align:center;
-    padding-bottom: 120px;
-    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .tools-icons{
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:30px;
     margin-top:30px;
+    animation: scroll 6s ease-in-out infinite alternate;
 }
 
-.tool{
-    width:80px;
-    height:80px;
-    background:#ddd;
-    border-radius:50%;
+/* animation */
+@keyframes scroll {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+
+.tool img{
+    width:60px;
+    height: 60px;
 }
 
 /* TOOLS responsive - mobile */
@@ -196,3 +209,4 @@
     height: 60px;
   }
 }
+

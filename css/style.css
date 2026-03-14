@@ -45,6 +45,9 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 
   transition: 0.3s;
+
+  display: flex;            /* ajoute flex */
+  flex-direction: column;   /* contenu en colonne */
 }
 
 .portfolio-card:hover {
@@ -59,6 +62,9 @@
 
 .portfolio-card-content {
   padding: 20px;
+  display: flex;            /* contenu interne en colonne */
+  flex-direction: column;
+  flex: 1;                  /* prend toute la hauteur */
 }
 
 .portfolio-card-tag {
@@ -80,6 +86,8 @@
   color: #ff6b4a;
   text-decoration: none;
   font-weight: 600;
+
+  margin-top: auto; /* pousse le lien en bas */
 }
 
 /* RESET */

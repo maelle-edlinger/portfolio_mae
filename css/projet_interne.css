@@ -35,7 +35,7 @@
 
 .projet-intro {
   margin-top: 60px;
-  width: 60%;
+  width: 40%;
 }
 
 .projet-intro h1 {
@@ -57,6 +57,10 @@
 
 .intro-grid h4 {
   color: #555;
+}
+
+li {
+  margin-left: 40px;
 }
 
 /* INTRO responsive - mobile */
