@@ -9,9 +9,6 @@
   </head>
 
   <body>
-
-
-
     <!-- HEADER -->
     <header class="header">
       <div class="container header-container">
@@ -34,17 +31,14 @@
       </div>
     </header>
 
-
-
-
-
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-content">
         <img class="hero_logo" src="images/logo.png" />
         <p>Graphiste, Direction artistique & Expériences visuelles.</p>
 
-        <a href="projets.html" class="btn">Mes projets </a>
+        <a href="projets.html" class="btn">Mes projets</a>
+        <a href="alternance.html" class="btn">Mon alternance</a>
       </div>
     </section>
 
@@ -89,6 +83,45 @@
       <div class="about-right">
         <h2>Je me présente</h2>
         <a href="a_propos.html" class="btn">À propos</a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+
+    <section class="container stats">
+      <div class="stat">
+        <img
+          class="stat-icone"
+          src="/images/pinceau.png"
+        />
+        <h3>Graphisme</h3>
+        <p>Branding, Print, ...</p>
+      </div>
+
+      <div class="stat">
+        <img
+          class="stat-icone"
+          src="/images/site.png"
+        />
+        <h3>Design UI/UX</h3>
+        <p>Site web, UX, ...</p>
+      </div>
+      <div class="stat">
+        <img
+          class="stat-icone"
+          src="/images/video.png"
+        />
+        <h3>Audiovisuel</h3>
+        <p>Motion, Montage, ...</p>
+      </div>
+
+      <div class="stat">
+        <img
+          class="stat-icone"
+          src="/images/communication.png"
+        />
+        <h3>Communication</h3>
+        <p>Réseaux Sociaux, ...</p>
       </div>
     </section>
 
@@ -180,6 +213,99 @@
       <h2 class="project_title">Mon Profil</h2>
       <div class="separator"></div>
 
+      <section class="skills">
+
+         <h3>Mes compétences</h3>
+
+        <!-- boutons -->
+        <div class="skills-tabs">
+          <button class="tab active" data-tab="design">
+            <p>Graphisme</p>
+          </button>
+          <button class="tab" data-tab="audiovisuel">Audiovisuel</button>
+          <button class="tab" data-tab="dev">Site internet</button>
+          <button class="tab" data-tab="com">Divers</button>
+        </div>
+
+        <div class="skills-content">
+          <!-- CARD GAUCHE -->
+
+          <div class="skills-card">
+            <div class="card-content active" id="design">
+              <img
+                class="card-content-icone"
+                src="/images/pinceau.png"
+              />
+              <h3>Graphisme</h3>
+              <p>Branding, Print, Web, Mershandising</p>
+              <p class="competence">3 compétences</p>
+            </div>
+
+            <div class="card-content" id="audiovisuel">
+              <img
+                class="card-content-icone"
+                src="/images/video.png"
+              />
+              <h3>Audiovisuel</h3>
+              <p>Motion, Montage vidéo, Photographie</p>
+              <p class="competence">3 compétences</p>
+            </div>
+
+            <div class="card-content" id="dev">
+              <img
+                class="card-content-icone"
+                src="/images/site.png"
+              />
+              <h3>Site internet</h3>
+              <p>Site web, UX, HTML & CSS</p>
+              <p class="competence">3 compétences</p>
+            </div>
+
+            <div class="card-content" id="com">
+              <img
+                class="card-content-icone"
+                src="/images/parametre.png"
+              />
+              <h3>Divers</h3>
+              <p>Réseaux Sociaux, Organisation</p>
+              <p class="competence">3 compétences</p>
+            </div>
+          </div>
+
+          <!-- COMPETENCES DROITE -->
+
+          <div class="skills-list">
+            <div class="skills-items active" data-skill="design">
+              <div class="skill"><img src="/images/Adobe_Illustrator_CC_icon.svg.png">Illustrator</div>
+              <div class="skill"><img src="/images/Adobe_Photoshop_CC_2026_icon.svg.png">Photoshop</div>
+              <div class="skill"><img src="/images/Adobe_InDesign_CC_icon.svg.png">InDesign</div>
+
+
+            </div>
+
+            <div class="skills-items" data-skill="audiovisuel">
+              <div class="skill"><img src="/images/Adobe_After_Effects_CC_icon.svg.png">After Effect</div>
+              <div class="skill"><img src="/images/Adobe_Photoshop_Lightroom_CC_logo.svg.png">Lightroom</div>
+              <div class="skill"><img src="/images/DaVinci_Resolve_Studio.png">Da Vinci</div>
+
+             
+            </div>
+
+            <div class="skills-items" data-skill="dev">
+              <div class="skill"><img src="/images/Figma-logo.svg">Figma</div>
+              <div class="skill"><img src="/images/html.png">HTML / CSS</div>
+              <div class="skill"><img src="/images/wordpress.png">Wordpress</div>
+            </div>
+
+            <div class="skills-items" data-skill="com">
+              <div class="skill"><img src="/images/instagram.png">Réseaux Sociaux</div>
+              <div class="skill"><img src="/images/Trello-Emblem.png">Trello</div>
+              <div class="skill"><img src="/images/notion.png">Notion</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="profile-grid">
         <div class="profile-info">
           <div>
@@ -208,10 +334,6 @@
               <p class="profile_milieu">Baccalauréat général</p>
               <p class="profile_lieu">Lycée Julie Daubié - Rombas</p>
             </div>
-
-            
-
-            
           </div>
         </div>
 
@@ -242,26 +364,11 @@
             <p class="profile_lieu">Association ATHAC Triathlon</p>
           </div>
         </div>
-
       </div>
 
       <section class="tools container">
         <div class="profile-about">
-            <a href="a_propos.html" class="btn cv">Tout découvrir</a>
-        </div>
-        
-        <h3>Mes outils</h3>
-
-        <div class="tools-icons">
-          <div class="tool"><img src="images/Adobe_After_Effects_CC_icon.svg.png"></div>
-          <div class="tool"><img src="images/Adobe_Illustrator_CC_icon.svg.png"></div>
-          <div class="tool"><img src="images/Adobe_InDesign_CC_icon.svg.png"></div>
-          <div class="tool"><img src="images/Adobe_Photoshop_CC_2026_icon.svg.png"></div>
-          <div class="tool"><img src="images/Adobe_Photoshop_Lightroom_CC_logo.svg.png"></div>
-          <div class="tool"><img src="images/Figma-logo.svg"></div>
-          <div class="tool"><img src="images/blender.svg.png"></div>
-          <div class="tool"><img src="images/arena7icon.svg"></div>
-          <div class="tool"><img src="images/DaVinci_Resolve_Studio.png"></div>
+          <a href="a_propos.html" class="btn cv">Tout découvrir</a>
         </div>
       </section>
     </section>
@@ -271,7 +378,7 @@
       <div class="container footer-grid">
         <div class="footer-logo">
           <img class="logo" src="images/monogramme_blanc.png" />
-        <p>Graphiste, Direction artistique & Expériences visuelles.</p>
+          <p>Graphiste, Direction artistique & Expériences visuelles.</p>
         </div>
 
         <div class="footer-nav">
@@ -295,5 +402,59 @@
 
       <div class="footer-bottom">© 2026 EDLINGER Maëlle</div>
     </footer>
+    <button id="backToTop">↑</button>
+    <script>
+
+const button = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 300) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+
+});
+
+button.addEventListener("click", () => {
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+});
+
+</script>
   </body>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.tab;
+
+        document
+          .querySelectorAll(".tab")
+          .forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        document.querySelectorAll(".card-content").forEach((card) => {
+          card.classList.remove("active");
+        });
+
+        document.getElementById(target).classList.add("active");
+
+        document.querySelectorAll(".skills-items").forEach((list) => {
+          list.classList.remove("active");
+
+          if (list.dataset.skill === target) {
+            list.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
 </html>

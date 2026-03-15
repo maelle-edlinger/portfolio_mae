@@ -2,7 +2,7 @@
 
 .about-page {
   padding: 200px 0px 20px 0px;
-  background: #f5f5f5;
+  background: #ffffff;
 }
 
 /* TITLE */
@@ -30,13 +30,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin: 120px auto; /* centre horizontalement */
+  margin-top: 90px; /* centre horizontalement */
+  margin-bottom: 60px;
   width: 60%;        /* largeur de la grille en % */
 }
 
 .stat {
-  background: #e7e7e7;
+  background: #F7F7F7;
   padding: 30px;
+  border: 0.5px solid #ddd;
   border-radius: 10px;
   text-align: center;
 }
@@ -64,7 +66,6 @@
 /* PROFILE */
 
 .profile{
-
     width: 70%;
 }
 
@@ -108,16 +109,16 @@ ul {
 }
 
 .card{
-    background:#eee;
+    background:#F7F7F7;
     padding:25px;
     border-radius:10px;
     margin-bottom:10px;
-    border: solid 0.5px #acacac;
+    border: solid 0.5px #ddd;
     transition: 0.2s;
 }
 
 .card:hover {
-    background: #d7d7d7;
+    background: #ffffff;
 }
 
 /* PROFILE responsive - mobile */
@@ -158,55 +159,183 @@ ul {
   }
 }
 
-/* TOOLS */
 
-.tools{
-    text-align:center;
-    padding-bottom: 80px;
+.skills{
+  background: #F7F7F7;
+  padding:60px 200px;
+  margin: auto;
+
 }
 
-.tools-icons{
+.skills-tabs{
     display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:30px;
-    animation: scroll 6s ease-in-out infinite alternate;
+    justify-content:left;
+    gap:15px;
+    margin-top:20px;
+    margin-bottom: 30px;
 }
 
-/* animation */
-@keyframes scroll {
-  from {
-    transform: translateX(-20px);
-  }
-  to {
-    transform: translateX(20px);
-  }
+.tab{
+    font-family: "creatodisplay";
+    font-size: 14px;
+    padding:10px 18px;
+    border-radius:25px;
+    border:1px solid #ddd;
+    background:#f7f7f7;
+    cursor:pointer;
+}
+
+.tab:hover{
+    font-family: "creatodisplay";
+    font-size: 14px;
+    padding:10px 18px;
+    border-radius:25px;
+    border:0.5px solid #ddd;
+    background:#fff;
+    cursor:pointer;
+}
+
+.tab.active{
+    font-family: "creatodisplay";
+    font-size: 14px;
+    background: linear-gradient(to right, #ff7957, #f3471e);
+    color:white;
+    border:0px solid #ddd;
+}
+
+.skills-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    width: 100%;
+    margin: auto;
+}
+
+.skills-card{
+    background:#fff;
+    border:0.5px solid #ddd;
+    padding:30px;
+    border-radius:20px;
+}
+
+.skills-card h3 {
+  font-size: 25px;
+  margin:10px 0;
+}
+
+.card-content{
+    display:none;
+}
+
+.card-content.active{
+    display:block;
+}
+
+.card-content-icone {
+  width: 9%;
+  padding-bottom: 15px;
+}
+
+.competence {
+  color: #F3471E;
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.skills-items{
+    display:none;
+    flex-direction:column;
+    gap:15px;
+    
+}
+
+.skills-items.active{
+    display:flex;
+    
+}
+
+.skill{
+  display: flex;
+  align-items: center;
+  background:#ececec;
+  padding:15px;
+  border-radius:12px;
+  gap: 15px;
+
+}
+
+.skill img{
+  width: 30px;
+  height: 30px;
+  
 }
 
 
-.tool img{
-    width:60px;
-    height: 60px;
+
+
+
+
+/* SECTION */
+
+.qualites{
+  background: #F7F7F7;
+  padding:60px 200px;
+  margin: auto;
+  margin-bottom: 60px;
 }
 
-/* TOOLS responsive - mobile */
-@media (max-width: 768px) {
-  .tools {
-    text-align: center;
-    padding-bottom: 50px; /* padding réduit sur mobile */
-  }
 
-  .tools-icons {
-    display: flex;
-    flex-wrap: wrap; /* permet aux icônes de passer à la ligne */
-    justify-content: center;
-    gap: 15px; /* espace réduit entre les icônes */
-    margin-top: 20px;
-  }
+/* GRID */
 
-  .tool {
-    width: 60px; /* icône plus petite sur mobile */
-    height: 60px;
-  }
+.qualites-grid{
+  margin-top: 40px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
 }
 
+
+/* CARD */
+
+.qualite-card{
+  background:#ffffff;
+  border:0.5px solid #ddd;
+  border-radius:16px;
+  padding:30px;
+  transition:0.3s;
+}
+
+
+/* ICON */
+
+.qualite-icon{
+  font-size:22px;
+  color:#F3471E;
+  margin-bottom:15px;
+}
+
+
+/* TEXT */
+
+.qualite-card h3{
+  font-size: 25px;
+  margin:10px 0;
+}
+
+.qualite-card p{
+  color:#000000;
+  font-size:15px;
+}
+
+@media (max-width:768px){
+
+.qualites{
+  width:90%;
+}
+
+.qualites-grid{
+  grid-template-columns:1fr;
+}
+
+}

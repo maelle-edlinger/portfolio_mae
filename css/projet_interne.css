@@ -107,8 +107,9 @@ li {
 }
 
 .stat {
-  background: #eee;
+  background: #F7F7F7;
   padding: 30px;
+  border: 0.5px solid #ddd;
   border-radius: 10px;
   text-align: center;
 }

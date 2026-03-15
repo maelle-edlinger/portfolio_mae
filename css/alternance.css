@@ -83,8 +83,7 @@
     align-items:center;
     justify-content:center;
     text-align:center;
-    background:#596421;
-    padding-top: 30px;
+    background:linear-gradient(120deg,#d5d5d5,#ffffff,#d5d842e2);
 }
 
 .hero h1{
@@ -189,6 +188,67 @@
     order: 1; /* passe en haut */
   }
 }
+
+
+/* TITLE */
+.container-title {
+    width: 50%;
+    margin: 70px auto;
+    text-align: center;
+}
+
+/* STATS responsive - mobile */
+@media (max-width: 768px) {
+  .container-title {
+    width: 90%;
+  }
+
+  .about-page {
+    padding: 40px 0px 20px 0px;
+  }
+
+}
+
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 90px; /* centre horizontalement */
+  margin-bottom: 60px;
+  width: 60%;        /* largeur de la grille en % */
+}
+
+.stat {
+  background: #F7F7F7;
+  padding: 30px;
+  border: 0.5px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 40px;
+}
+
+/* STATS responsive - mobile */
+@media (max-width: 768px) {
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px;                  /* réduire l’espace entre les stats */
+    width: 60%;                 /* prend presque toute la largeur */
+    margin: 60px auto;          /* centrer verticalement et horizontalement */
+  }
+
+  .stat {
+    padding: 20px;              /* padding réduit pour mobile */
+  }
+
+}
+
 
 /* PROJECTS */
 
