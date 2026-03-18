@@ -38,15 +38,7 @@
         <h2 class="title">À Propos</h2>
         <div class="separator"></div>
         <p>
-          Passionnée de création numérique, je suis ravis de plonger dans ma
-          passion, me poussant à explorer cet environnement stimulant.
-        </p>
-        <br>
-        <p>Vous découvrirez ici mes travaux parfois fictifs, parfois réel.</p>
-        <br>
-        <p>
-          Tout les travaux montrer ici sont réalisé par moi. Lors de travaux de
-          groupe, uniquement mes partie sont présenteés.
+          À la croisée du design et du digital, je maîtrise plusieurs outils et disciplines : graphisme, web, communication, photo et vidéo. Cette approche me permet de créer des expériences visuelles complètes et engageantes.
         </p>
       </div>
 
@@ -339,7 +331,31 @@
 
       <div class="footer-bottom">© 2026 EDLINGER Maëlle</div>
     </footer>
+
+    <button id="backToTop">↑</button>
+    <script>
+      const button = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      });
+
+      button.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+
+
+
   </body>
+
 
   <script>
     const tabs = document.querySelectorAll(".tab");

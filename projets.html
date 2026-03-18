@@ -317,5 +317,29 @@
 
       <div class="footer-bottom">© 2026 EDLINGER Maëlle</div>
     </footer>
+
+
+
+
+
+    <button id="backToTop">↑</button>
+    <script>
+      const button = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      });
+
+      button.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>

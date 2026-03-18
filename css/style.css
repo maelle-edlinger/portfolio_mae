@@ -5,13 +5,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "creatodisplay";
-  src: url("../font/creato_display/CreatoDisplay-Regular.otf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: "creatodisplay";
@@ -22,9 +15,25 @@
 
 @font-face {
   font-family: "creatodisplay";
+  src: url("../font/creato_display/CreatoDisplay-Regular.otf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "creatodisplay";
   src: url("../font/creato_display/CreatoDisplay-Medium.otf") format("truetype");
-  font-weight: 600;
+  font-weight: 400;
   font-style: medium;
+}
+
+@font-face {
+  font-family: "creatodisplay";
+  src: url("../font/creato_display/CreatoDisplay-Bold.otf") format("truetype");
+  font-weight: 600;
+  font-style: large;
 }
 
 @font-face {
@@ -46,8 +55,10 @@
 
   transition: 0.3s;
 
-  display: flex;            /* ajoute flex */
-  flex-direction: column;   /* contenu en colonne */
+  display: flex;
+  /* ajoute flex */
+  flex-direction: column;
+  /* contenu en colonne */
 }
 
 .portfolio-card:hover {
@@ -62,9 +73,11 @@
 
 .portfolio-card-content {
   padding: 20px;
-  display: flex;            /* contenu interne en colonne */
+  display: flex;
+  /* contenu interne en colonne */
   flex-direction: column;
-  flex: 1;                  /* prend toute la hauteur */
+  flex: 1;
+  /* prend toute la hauteur */
 }
 
 .portfolio-card-tag {
@@ -87,7 +100,8 @@
   text-decoration: none;
   font-weight: 600;
 
-  margin-top: auto; /* pousse le lien en bas */
+  margin-top: auto;
+  /* pousse le lien en bas */
 }
 
 /* RESET */
@@ -119,9 +133,19 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
-    font-family: "creatodisplay";
-    font-size: 400;
+  font-size: 16px;
+  font-family: "creatodisplay";
+  font-size: 400;
+}
+
+span {
+  font-family: "creatodisplay";
+  font-weight: 600;
+}
+
+p {
+  font-family: "creatodisplay";
+  font-weight: 200;
 }
 
 /* CONTAINER */
@@ -148,10 +172,10 @@ h4 {
 }
 
 /* HEADER */
-
 .header {
   position: absolute;
-  top: 20px; /* décalage depuis le haut de la page */
+  top: 20px;
+  /* décalage depuis le haut de la page */
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -166,14 +190,16 @@ h4 {
 }
 
 .header-container {
-  width: 100%; /* prend toute la largeur du header */
-  padding: 0 30px; /* optionnel : un petit padding interne */
+  width: 100%;
+  /* prend toute la largeur du header */
+  padding: 0 30px;
+  /* optionnel : un petit padding interne */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-container > div:nth-child(2) {
+.header-container>div:nth-child(2) {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -185,13 +211,16 @@ a {
   color: black;
 }
 
+.nav-left a:hover {
+  color: #F3471E;
+}
+
 .logo {
   width: 30px;
 }
 
 /* Header mobile - logo en haut et menu en dessous */
 @media (max-width: 768px) {
-
   .header {
     position: relative;
     width: 100%;
@@ -208,14 +237,16 @@ a {
   }
 
   /* Retire le positionnement absolu du logo */
-  .header-container > div:nth-child(2) {
+  .header-container>div:nth-child(2) {
     position: static !important;
     transform: none !important;
-    order: 1; /* logo en haut */
+    order: 1;
+    /* logo en haut */
   }
 
   .nav-left {
-    order: 2; /* pages en dessous du logo */
+    order: 2;
+    /* pages en dessous du logo */
   }
 
   /* Cache le bouton contact sur mobile */
@@ -273,14 +304,18 @@ a {
 /* FOOTER responsive - mobile */
 @media (max-width: 768px) {
   .footer {
-    padding: 50px 20px; /* padding réduit sur mobile */
-    text-align: center; /* centrer tout le texte */
+    padding: 50px 20px;
+    /* padding réduit sur mobile */
+    text-align: center;
+    /* centrer tout le texte */
   }
 
   .footer-grid {
     display: grid;
-    grid-template-columns: 1fr; /* une seule colonne */
-    gap: 30px; /* espace entre les blocs */
+    grid-template-columns: 1fr;
+    /* une seule colonne */
+    gap: 30px;
+    /* espace entre les blocs */
   }
 
   .footer img {
@@ -299,7 +334,7 @@ a {
 
 
 /*SEPARATEUR*/
-.separator{
+.separator {
   height: 8px;
   width: 8%;
   margin: 20px auto;

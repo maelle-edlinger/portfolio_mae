@@ -192,9 +192,9 @@
 
 /* TITLE */
 .container-title {
-    width: 50%;
-    margin: 70px auto;
-    text-align: center;
+  width: 60%;
+  margin: 70px auto;
+  text-align: center;
 }
 
 /* STATS responsive - mobile */
@@ -207,6 +207,14 @@
     padding: 40px 0px 20px 0px;
   }
 
+}
+
+.container-alternance {
+  text-align: left;
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 60px;
 }
 
 
