@@ -37,7 +37,7 @@
 /* INTRO */
 
 .projet-intro {
-  margin-top: 60px;
+  margin:60px auto;
   width: 40%;
 }
 
@@ -139,8 +139,26 @@ li {
 .image-large img {
   width: 100%;
   border-radius: 12px;
-  margin: 60px 0;
+  margin: 40px 0;
 }
+
+
+.bouton_externe {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  margin: 20px auto;
+  background: linear-gradient(to right, #ff7957, #f3471e);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.bouton_externe:hover {
+  background: #f3471e;
+}
+
 
 /* GALERIE */
 
@@ -233,3 +251,15 @@ li {
     width: 100%; /* chaque carte prend toute la largeur de la grille */
   }
 }
+
+
+.video {
+  margin: auto;
+  display: block;
+  height: 100vh;
+}
+
+.video-bg {
+  width: 20%;
+}
+
